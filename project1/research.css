@@ -1,0 +1,47 @@
+/* place your css style definitions here 
+ Here is a link to a great reference for learning and 
+ experimenting with css:
+https://www.w3schools.com/css/default.asp
+*/
+
+
+h1 {
+  color: black;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h3 {
+  color: #A0522D;
+  width:250px;
+  font-size: 20px;
+  margin-top: -30px;
+  margin-left: 5px;
+  background: white;
+  font-style: italic;
+}
+
+h4{
+  color: #A0522D;
+  width:175px;
+  font-size: 15px;
+  margin-top: -30px;
+  margin-left: 5px;
+  background: white;
+  font-weight: bold;
+}
+
+textarea{
+  width: 600px;
+  height: 200px;
+}
+
+.general {
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+
+

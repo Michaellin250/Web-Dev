@@ -1,0 +1,19 @@
+/* place your css style definitions here 
+ Here is a link to a great reference for learning and 
+ experimenting with css:
+https://www.w3schools.com/css/default.asp
+*/
+
+button {
+  display: inline;
+  display:block;
+}
+canvas{
+  border: 1px solid black;
+}
+div{
+  display: inline-block;
+  float:left;
+}
+
+

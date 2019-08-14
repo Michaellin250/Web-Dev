@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+        <title>Research Institute</title>
+	<script src="research.js"></script>
+        <link rel = "stylesheet" href = "research.css" />
+    </head>
+	<body onload="main()">
+        <header>
+		<h1>Research Form</h1>
+        </header>
+	
+        <form name= "theForm" method="get" action="http://localhost:3000/processForm">
+	<div class= "general">
+        	<h3>Gerneral Information</h3>
+                  Firstname: <input type="text" name="firstname" id="firstname" required>
+			Lastname: <input type="text" name="lastname" id="lastname" required> <br>
+			Phone: <input name="phoneFirstPart" type="text" id="phoneFirstPart" maxlength="3" size="3" required>-
+                               <input name="phoneSecondPart" type="text" id="phoneSecondPart" maxlength="3" size="3" required>-
+                               <input name="phoneThirdPart" type="text" id="phoneThirdPart" maxlength="4" size="4" required> 
+			Email: <input type="email" id="email" name="email"required>
+		
+	</div>
+	<br>
+	<div class= "general">
+		<h3>Research Study Data</h3>
+		<div class="general">
+			<h4>Age/Height/Weight</h4>
+			Age: <input type="number" name="age" id="age" min="1" max="125" required>
+			Height: <input type="number" name="heightFeet" id="heightFeet" min="2" max="7" required> Feet
+			<input type="number" name="heightInches" id="heightInches" min="0" max="11" required> inches &nbsp
+			Weight: <input type="number" id="weight" min="1" max="600" required> Pounds
+		</div>
+
+		<br>
+
+		<div class="general">
+			<h4>Conditions</h4>
+			Which of the following conditions are present in your family? (circle all that apply) <br>
+			<input type="checkbox" name="highBloodPressure" id="highBloodPressure" value="highBloodPressure">High Blood Pressure
+			<input type="checkbox" name="diabetes" id="diabetes" value="diabetes">Diabetes
+			<input type="checkbox" name="glaucoma" id="glaucoma" value="glaucoma">Glaucoma
+			<input type="checkbox" name="asthma" id="asthma" value="asthma">Asthma
+			<input type="checkbox" name="none" id="none" value="none">None
+		</div>
+		<br>
+		<div class="general">
+			<h4>Time Period</h4>
+			How long have you experienced any of the above conditions? <br>
+			<input type="radio" id="Never" name="period" value="Never" /> Never
+			<input type="radio" id="LessThanYear" name="period" value="LessThanYear" />Less than a Year
+			<input type="radio" id="OneTwoYears" name="period" value="OneTwoYears"  />One to Two Years
+			<input type="radio" id="MoreThanTwoYears" name="period" value="MoreThanTwoYears"/>More than Two Years
+
+		</div>
+
+		<br>
+		<div class="general">
+			<h4> Study Information</h4>
+			Which study are you taking part of? 
+			<select name="studyType">
+				<option value="LongTerm">Long Term</option>
+				<option value="ShortTerm">Short Term </option>
+			</select>
+			Assigned Study id: <input type="text" name="firstFourDigits" id="firstFourDigits" placeholder="A###" maxlength="4" required>-
+					   <input type="text" name="secondFourDigits" id="secondFourDigits" placeholder="B###" maxlength="4" required>
+		</div>
+		<br>
+		<div class="general">
+			<h4>Additional Information (Comments)</h4>
+			<textarea name="comments"></textarea>
+		</div>
+	</div>
+	<br>
+	<div class="general">
+			<input type="reset" value="Clear Form" />
+			<input type="submit" id="submit" value="Submit Information"/>
+	</div>
+
+        </form>
+
+        <footer>
+            CMSC Research Institute &reg;
+        </footer>
+    </body>
+</html>

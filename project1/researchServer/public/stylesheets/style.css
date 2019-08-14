@@ -1,0 +1,63 @@
+body {
+  font-family: arial, helvetica, sans-serif; 
+font-size: 75%;
+color: black;
+}
+
+h1 {
+  text-shadow: silver .125em .125em .125em;
+  text-decoration: underline;
+}
+
+fieldset {
+  margin-top: 1em;
+  border-radius: .75em;
+}
+
+legend {
+  color: #A0522D;
+  font-weight: bold;
+}
+
+#phoneFirstPart {
+width: 2em;
+}
+
+#phoneSecondPart {
+width: 2em;
+}
+
+#phoneThirdPart {
+width: 2.25em;
+}
+
+#age {
+width: 3em;
+  padding: .25em;
+}
+
+#heightFeet {
+width: 2em;
+  padding: .25em;
+}
+
+#heightInches {
+width: 3em;
+  padding: .25em;	
+}
+
+#weight {
+width: 3em;
+  padding: .25em;
+}
+
+.studyIdField {
+width: 2.5em;
+}
+
+footer {
+  margin-top: 1em;
+  border-top: double;
+  text-align: center;
+  border-bottom: double;
+}
